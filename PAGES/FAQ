@@ -14,7 +14,7 @@
 
 
 
-  <a href="..../PAGES/about.html"> About </a>
+  <a href="PAGES/about.html"> About </a>
 
 
 
@@ -27,6 +27,12 @@
 
 <p> WHAT IS THE POINT OF THIS WEBPAGE</p>
 
+<p> This website was made for Computer Science class</p>
+
+
+<p> WHERE IS THE ABOUT SECTION</p>
+
+<p> Top left of the website</p>
 
 </body>
 </html>
