@@ -20,25 +20,25 @@ function test1(){
 }
 
 function test2(){
-	var age=prompt("how old are you?")
+	var age=prompt("how old are you?");
 	
 	if(age < 14) {
-		alert("That's not too old")
+		alert("That's not too old");
 
 	}
 
 	else if(age == 14){
-		alert("14 is a good age")
+		alert("14 is a good age");
 
 	}
 
 	else if(age > 14){
-		alert("You're older than i thought")
+		alert("You're older than i thought");
 
 	}
 
 	else{
-		alert("Not a valid age")
+		alert("Not a valid age");
 
 
 	}
