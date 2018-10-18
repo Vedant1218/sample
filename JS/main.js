@@ -21,7 +21,7 @@ function test1(){
 
 function test2(){
 	
-	var age=prompt("how old are you?");
+	var age = prompt("how old are you?");
 	
 	if(age < 14) {
 		alert("That's not too old");
