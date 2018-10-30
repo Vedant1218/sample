@@ -55,12 +55,17 @@
 
 
 
+<p>Display "Good day!" if the hour is less than 18:00:</p>
+
+<p id="demo">Good Evening!</p>
 
 
 <script>
 	
 	var age = prompt("What is your age?")
 	alert("You are "  + age )
+
+
 
 if (new Date().getHours() < 18) {
     document.getElementById("demo").innerHTML = "Good day!";
