@@ -49,8 +49,13 @@ function test2(){
 
 
 
-function loop1
+function loop1()[
 
-	var count(0) = prompt(count += 1);
+	var count = alert
+	
+]
+	
+	
+	
 
 	
