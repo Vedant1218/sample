@@ -51,14 +51,11 @@ function test2(){
 
 function loop1(){
 
-	var sum = 0
+	var sum = 1
 	
 	
-	while (sum <= 100) {
-	
-	sum++;
-	}
-	alert (sum);
+	do (sum = 1, sum++)
+	while(sum >= 100)
 }
 	
 	
