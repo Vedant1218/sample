@@ -45,3 +45,12 @@ function test2(){
 	}
 
 }
+
+
+
+
+function loop1(0)
+
+	var count = alert(loop1 += 1);
+
+	
