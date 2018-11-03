@@ -55,7 +55,7 @@ function loop1(){
 	
 	
 	do {
-	document.attribute(sum++);
+	document.innerHTML(sum++);
 	alert(sum);
 	   }
 	while(sum <= 100);
