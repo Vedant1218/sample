@@ -51,7 +51,7 @@ function test2(){
 
 function loop1(){
 
-	var counter = alert(counter + 1)
+	var counter(0) = alert(counter += 1)
 	
 }
 	
