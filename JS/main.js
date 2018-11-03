@@ -54,8 +54,9 @@ function loop1(){
 	var sum = 1
 	
 	
-	do (sum = 1, sum++)
-	while(sum >= 100)
+	do {sum = 1, sum;
+	   }
+	while(sum >= 100);
 	alert(sum)
 }
 	
