@@ -53,12 +53,10 @@ function loop1(){
 
 	var sum = 0
 	
-	var number = 1
 	
-	while (number <= 100) {
+	while (sum <= 100) {
 	
-	sum += number;
-	number++;
+	sum++;
 	}
 	alert (sum);
 }
