@@ -54,10 +54,11 @@ function loop1(){
 	var sum = 1
 	
 	
-	do {sum = 1; sum++;
+	do {
+	alert(sum++);
 	   }
 	while(sum <= 100);
-	alert(sum)
+	
 }
 	
 	
