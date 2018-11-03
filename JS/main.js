@@ -49,9 +49,9 @@ function test2(){
 
 
 
-function loop1()[
+function loop1(0)[
 
-	var count = alert
+	var counter = alert(counter +1)
 	
 ]
 	
