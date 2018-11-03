@@ -55,8 +55,12 @@ function loop1(){
 	
 	var number = 1
 	
-	var counter = alert(sum + number)
+	while (number <= 100) {
 	
+	sum += number;
+	number++;
+	}
+	alert (sum);
 }
 	
 	
