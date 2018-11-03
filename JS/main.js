@@ -51,7 +51,11 @@ function test2(){
 
 function loop1(){
 
-	var counter(0) = alert(counter += 1)
+	var sum = 0
+	
+	var number = 1
+	
+	var counter = alert(sum + number)
 	
 }
 	
