@@ -40,10 +40,9 @@ input {
     font-size: 16px;
     box-sizing: 20px
 }
-div { 
-    width: 400px;
-    height: 400px;
-    background-repeat: no-repeat, repeat;
+body { 
     background-image: url("https://cdn.wallpapersafari.com/16/9/HbVTFk.jpg");
-    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 }
