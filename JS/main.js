@@ -63,7 +63,7 @@ function loop1(){
 		{ 
 			console.log( i + "Fizz");
 		}
-			else if (i%5 === 0)\
+			else if (i%5 === 0)
 		{
 			console.log( i + "Buzz");
 		}
