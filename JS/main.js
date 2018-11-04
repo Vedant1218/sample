@@ -76,11 +76,19 @@ function loop1(){
 		 
 	
 	}
+}
 
-	
-	
-	
-	
+
+function loop2(){
+
+	var j = * 
+	   
+	    for ( var j > 0; j++);
+	{
+		console.log(j);
+	}
+	    
+	    
 }
 	
 	
