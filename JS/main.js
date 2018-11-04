@@ -69,14 +69,9 @@ function loop1(){
 		{
 			console.log(i);
 		}
-	}
 			
 				
 		 
-	
-	
-	
-	
 	
 	}
 
