@@ -49,6 +49,8 @@ function test2(){
 
 
 function loop1(){
+	
+	var i = 1
 
 	for( var i = 1; i <= 100; i++ )
 	
