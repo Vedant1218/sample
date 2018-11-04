@@ -81,11 +81,15 @@ function loop1(){
 
 function loop2(){
 
-	var j = * 
-	   
-	    for ( var j > 0; j++);
+	var x,y,chr;
+	for(x=1; x <=6; x++)
 	{
-		console.log(j);
+   	for (y=1; y < x; y++)
+     	{
+    	chr=chr+("*");        
+      	}
+ 	console.log(chr);
+ 	chr='';    
 	}
 	    
 	    
