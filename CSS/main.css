@@ -17,17 +17,13 @@ p{
     box-sizing: border-box;
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
+.row {
+  display: flex;
 }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
 
 input {
