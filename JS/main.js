@@ -41,7 +41,7 @@ function test2(){
 	else{
 		alert("Not a valid age");
 
-
+ if
 	}
 
 }
@@ -51,14 +51,39 @@ function test2(){
 
 function loop1(){
 
-	var sum = 1
+	for( var i = 1; i <= 100; i++ )
+	
+	{ 
+		if ( i%3 === 0 && i%5 === 0 )
+		{
+			console.log( i + "FizzBuzz");
+		}
+			else if ( i%3 === 0)
+		{ 
+			console.log( i + "Fizz");
+		}
+			else if (i%5 === 0)\
+		{
+			console.log( i + "Buzz");
+		}
+			else
+		{
+			console.log(i);
+		}
+	}
+			
+				
+		 
 	
 	
-	do {
-	document.innerHTML(sum++);
-	alert(sum);
-	   }
-	while(sum <= 100);
+	
+	
+	
+	}
+
+	
+	
+	
 	
 }
 	
