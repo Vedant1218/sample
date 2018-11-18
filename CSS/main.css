@@ -67,12 +67,12 @@ p{
 .input1 {
     background-color: #4CAF50; /* Green */
     border: none;
-    padding: 20px, 35px;
+    padding: 30px, 45px;
     color:#6CA6CD;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 100px;
+    font-size: 15px;
     
 }
 
