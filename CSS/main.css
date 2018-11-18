@@ -65,9 +65,8 @@ p{
 
 .input1 {
     background-color: #4CAF50; /* Green */
-    border: none;
     padding: 30px, 45px;
-    color:#6CA6CD;
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
