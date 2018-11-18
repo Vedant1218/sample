@@ -95,29 +95,29 @@ function loop2(){
 	    
 }
 
-var x = Math.floor(Math.random() * 1000) + 1;
+var y = Math.floor(Math.random() * 1000) + 1;
 var turns = 6;
 var hint = 'Guess my number, 1-100!';
 
 
-function numberguesser(){
+function GTN(){
 
 while (turns > 0) {
   	var guess = prompt(hint +' You have ' + turns + ' guesses left.');
   	if (!guess) break;
   	guess = Number(guess);
- 	 if (guess == x) {
+ 	 if (guess == y) {
     	document.write('<p>YOU WIN!</p>' +
       	'<p><img src="/images/photo/gold_trophy.jpg">');
    	 turns = 0;
   	} else {
     	hint = 'Nope.';
-    	if (guess < x) hint += ' Too small!';
-    	if (guess > x) hint += ' Too big!';
+    	if (guess < y) hint += ' Too small!';
+    	if (guess > y) hint += ' Too big!';
     	turns = turns - 1;
  	}
 	}
-alert('The secret number was ' + x + '.');
+alert('The secret number was ' + y + '.');
 }
 	
 	
