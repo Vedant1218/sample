@@ -91,7 +91,7 @@ function loop2(){
  	console.log(chr);
  	chr='';    
 	}
-	    
+	    11 
 	    
 }
 
@@ -100,13 +100,14 @@ var turns = 6;
 var hint = 'Guess my number, 1-1000!';
 
 
-function newGame() {
+function newGame(){
 	y = Math.floor(Math.random() * 1000) + 1;
 	turns = 6;
 }
+
 function GTN(){
 
-	repeat
+	
 while (turns > 0) {
   	var guess = prompt(hint +' You have ' + turns + ' guesses left.');
   	if (!guess) break;
@@ -123,7 +124,7 @@ while (turns > 0) {
     	turns = turns - 1;
  	}
 	}
-alert('The secret number was ' + y + '.');
+	alert('The secret number was ' + y + '.');
 }
 	
 	
