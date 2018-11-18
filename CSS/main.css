@@ -71,6 +71,7 @@ p{
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
+    cursor: pointer;
     
 }
 
@@ -91,6 +92,7 @@ li a {
     width: 40px;
     font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
 }
 
 
