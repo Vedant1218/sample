@@ -64,16 +64,16 @@ p{
 <style>
 
 
-#input1 {
+.input1 {
     background-color: #4CAF50; /* Green */
     border: none;
+    padding: 20px, 35px;
     color:#6CA6CD;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 100px;
-    box-sizing: 55px;
-    width: 300px
+    
 }
 
 
@@ -88,7 +88,7 @@ ul {
 
 li a {
     display: block;
-    color: #f1f1f1;
+    color: #000000;
     padding: 8px 16px;
     width: 40px;
     font-weight: bold;
