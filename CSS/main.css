@@ -1,5 +1,5 @@
 body { 
-    background-image:"https://www.tacoma.uw.edu/sites/default/files/styles/node_gallery_display/public/node_gallery/HomeCSS.png?itok=dTnNbY9z";
+    background-image:url("https://www.tacoma.uw.edu/sites/default/files/styles/node_gallery_display/public/node_gallery/HomeCSS.png?itok=dTnNbY9z");
     
 }
  a{
