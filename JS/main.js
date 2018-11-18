@@ -100,8 +100,13 @@ var turns = 6;
 var hint = 'Guess my number, 1-1000!';
 
 
+function newGame() {
+	y = Math.floor(Math.random() * 1000) + 1;
+	turns = 6;
+}
 function GTN(){
 
+	repeat
 while (turns > 0) {
   	var guess = prompt(hint +' You have ' + turns + ' guesses left.');
   	if (!guess) break;
@@ -110,6 +115,7 @@ while (turns > 0) {
     	document.write('<p>YOU WIN!</p>' +
       	'<p><img src="/images/photo/gold_trophy.jpg">');
    	 turns = 0;
+	newGame();
   	} else {
     	hint = 'Nope.';
     	if (guess < y) hint += ' Too small!';
