@@ -97,7 +97,7 @@ function loop2(){
 
 var y = Math.floor(Math.random() * 1000) + 1;
 var turns = 6;
-var hint = 'Guess my number, 1-100!';
+var hint = 'Guess my number, 1-1000!';
 
 
 function GTN(){
