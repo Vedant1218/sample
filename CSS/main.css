@@ -71,8 +71,9 @@ input {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
-    box-sizing: 55px
+    font-size: 100px;
+    box-sizing: 55px;
+    width: 300px
 }
 
 
