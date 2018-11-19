@@ -124,14 +124,14 @@ while (turns > 0) {
     	turns = turns - 1;
 	}
 	}
-	else if (turns == 0){
+	if (turns == 0)
 	alert('The secret number was ' + y + '.');
 	newGame();
 	
-	}
-
-
 }
+
+
+
 	
 	
 	
