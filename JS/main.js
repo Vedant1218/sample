@@ -123,10 +123,11 @@ while (turns > 0) {
     	if (guess > y) hint += ' Too big!';
     	turns = turns - 1;
 	}
-	if (turns = 0){
+	}
+	else if (turns = 0){
 	alert('The secret number was ' + y + '.');
 	newGame();
-	}
+	
 	}
 
 
