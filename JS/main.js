@@ -102,6 +102,7 @@ var hint = 'Guess my number, 1-1000!';
 
 function newGame(){
 	y = Math.floor(Math.random() * 1000) + 1;
+	hint = 'Guess my number, 1-1000!';
 	turns = 10;
 }
 
@@ -124,7 +125,7 @@ while (turns > 0) {
     	turns = turns - 1;
 	}
 	}
-	if (turns == 0)
+	if (turns == 0);
 	alert('The secret number was ' + y + '.');
 	newGame();
 	
