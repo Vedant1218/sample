@@ -122,9 +122,12 @@ while (turns > 0) {
     	if (guess < y) hint += ' Too small!';
     	if (guess > y) hint += ' Too big!';
     	turns = turns - 1;
+	}
 	alert('The secret number was ' + y + '.');
 	newGame();
 	}
+
+
 }
 	
 	
