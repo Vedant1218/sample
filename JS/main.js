@@ -114,7 +114,7 @@ while (turns > 0) {
   	if (!guess) break;
   	guess = Number(guess);
  	 if (guess == y) {
-    	document.write('YOU WIN!');
+    	prompt('YOU WIN!');
    	 turns = 0;
 	newGame();
 	GTN();
