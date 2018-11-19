@@ -117,7 +117,6 @@ while (turns > 0) {
     	alert('YOU WIN!');
    	 turns = 0;
 	newGame();
-	GTN();
   	} else {
     	hint = 'Nope.';
     	if (guess < y) hint += ' Too small!';
