@@ -113,7 +113,7 @@ li a {
     display: block;
     color: #000000;
     padding: 8px 16px;
-    width: 40px;
+    width: 200px;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -121,6 +121,7 @@ li a {
 li a:hover {
     background-color: #555;
     color: white;
+    
 }
 
 
