@@ -114,7 +114,7 @@ while (turns > 0) {
   	if (!guess) break;
   	guess = Number(guess);
  	 if (guess == y) {
-    	prompt('YOU WIN!');
+    	alert('YOU WIN!');
    	 turns = 0;
 	newGame();
 	GTN();
@@ -125,7 +125,7 @@ while (turns > 0) {
     	turns = turns - 1;
 	}
 	}
-	if (turns = 0);
+	if (turns == 0);
 	alert('The secret number was ' + y + '.');
 	newGame();
 	GTN();
