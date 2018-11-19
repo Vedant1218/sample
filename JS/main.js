@@ -126,8 +126,9 @@ while (turns > 0) {
 	}
 	}
 	if (turns == 0);
+	GTN().reset();
 	alert('The secret number was ' + y + '.');
-	GTN().reset;
+	
 	
 }
 
