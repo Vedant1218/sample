@@ -126,7 +126,7 @@ while (turns > 0) {
 	}
 	}
 	if (turns == 0);
-	GTN().reset();
+	newGame();
 	alert('The secret number was ' + y + '.');
 	
 	
