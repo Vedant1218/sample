@@ -96,13 +96,13 @@ function loop2(){
 }
 
 var y = Math.floor(Math.random() * 1000) + 1;
-var turns = 6;
+var turns = 10;
 var hint = 'Guess my number, 1-1000!';
 
 
 function newGame(){
 	y = Math.floor(Math.random() * 1000) + 1;
-	turns = 6;
+	turns = 10;
 }
 
 function GTN(){
@@ -122,9 +122,9 @@ while (turns > 0) {
     	if (guess < y) hint += ' Too small!';
     	if (guess > y) hint += ' Too big!';
     	turns = turns - 1;
- 	}
-	}
 	alert('The secret number was ' + y + '.');
+	newGame();
+	}
 }
 	
 	
