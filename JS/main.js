@@ -98,10 +98,6 @@ function loop2(){
 var y = Math.floor(Math.random() * 1000) + 1;
 var turns = 10;
 var hint = 'Guess my number, 1-1000!';
-var guess = document.getElementById("guess").value;
-
-
-document.getElementById("hint").value = 'Guess my number, 1-1000!';
 
 
 function newGame(){
@@ -114,11 +110,11 @@ function GTN(){
 
 	
 while (turns > 0) {
-  	var guess = (hint +' You have ' + turns + ' guesses left.');
+  	var guess = prompt(hint +' You have ' + turns + ' guesses left.');
   	if (!guess) break;
   	guess = Number(guess);
  	 if (guess == y) {
-    	hint = 'YOU WIN!';
+    	alert('YOU WIN!');
    	 turns = 0;
 	newGame();
   	} else {
