@@ -131,7 +131,27 @@ while (turns > 0) {
 	
 }
 
+var unknownNumber = Math.round((Math.random() * 99) + 1);
+var guesses = 0;
 
+function guessProcess() {
+    var guess = document.getElementById("guess").value;
+    guesses++;
+    if (guesses <= 7) {
+        if (guess == unknownNumber) {
+            alert("correct");
+        }
+        if (unknownNumber < guess) {
+            alert("Less than guess");
+        }
+
+        if (unknownNumber > guess) {
+            alert("Greater than guess");
+        }
+    } else {
+        alert("Max guesses");
+    }
+}
 
 	
 	
