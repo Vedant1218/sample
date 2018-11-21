@@ -100,27 +100,26 @@ function loop2(){
 	
 }
 
-var unknownNumber = Math.floor((Math.random() * 1000) + 1);
-var guesses = 0;
 
-function guessProcess() {
-    var guess = document.getElementById("guess").value;
-    guesses++;
-    if (guesses <= 7) {
-        if (guess == unknownNumber) {
-            alert("correct");
-        }
-        if (unknownNumber < guess) {
-            alert("Less than guess");
-        }
+var hidden = Math.round(Math.random()*1000+1);
+var counter = 0
+console.log(hidden);
 
-        if (unknownNumber > guess) {
-            alert("Greater than guess");
-        }
-    } else {
-        alert("Max guesses");
+function check_guess() {
+    counter++;
+    var n = Number(document.getElementById('n').value);
+    var result = 'equal after ' + counter + ' guesses';
+    if (n < hidden) {
+        result = n + ' is less than our number';
     }
+    if (n > hidden) {
+        result = n + ' is greater than our number';
+    }
+    document.getElementById('result').innerHTML = result;
+    return false;
 }
+
+document.getElementById('go').addEventListener('click', check_guess);
 
 	
 	
