@@ -100,7 +100,7 @@ function loop2(){
 	
 }
 
-var unknownNumber = Math.round((Math.random() * 1000) + 1);
+var unknownNumber = Math.floor((Math.random() * 1000) + 1);
 var guesses = 0;
 
 function guessProcess() {
