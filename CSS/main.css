@@ -56,6 +56,17 @@ h1 {
    text-shadow: 2px 2px 4px #000000;
 
 }
+h2{
+ color:blue;
+  font-size:80;
+  font-family: AHelvetica, sans-serif;
+  text-align:right;
+   text-shadow: 2px 2px 4px #000000;
+
+
+
+
+}
 
 p{
   color:#6CA6CD;
