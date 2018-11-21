@@ -95,38 +95,7 @@ function loop2(){
 	    
 }
 
-var y = Math.floor(Math.random() * 1000) + 1;
-var turns = 10;
-var hint = 'Guess my number, 1-1000!';
 
-
-function newGame(){
-	y = Math.floor(Math.random() * 1000) + 1;
-	hint = 'Guess my number, 1-1000!';
-	turns = 10;
-}
-
-function GTN(){
-
-	
-while (turns > 0) {
-  	var guess = prompt(hint +' You have ' + turns + ' guesses left.');
-  	if (!guess) break;
-  	guess = Number(guess);
- 	 if (guess == y) {
-    	alert('YOU WIN!');
-   	 turns = 0;
-	newGame();
-  	} else {
-    	hint = 'Nope.';
-    	if (guess < y) hint += ' Too small!';
-    	if (guess > y) hint += ' Too big!';
-    	turns = turns - 1;
-	}
-	}
-	if (turns == 0);
-	newGame();
-	alert('The secret number was ' + y + '.');
 	
 	
 }
