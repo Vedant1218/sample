@@ -101,7 +101,7 @@ function loop2(){
 }
 
 
-var hidden = Math.round(Math.random()*1000+1);
+var hidden = Math.floor(Math.random() * 1000) +1;
 var counter = 0
 console.log(hidden);
 
