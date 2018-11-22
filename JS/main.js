@@ -117,7 +117,7 @@ function userGuess() {
 function NumberToGuess(confirmIt) {
     var guesses = document.getElementById("output");
    
-    if (confirmIt && !confirm('Restart game with new number?')) {
+    if (confirmIt && !confirm('Generate new number?')) {
         return;
     }
     

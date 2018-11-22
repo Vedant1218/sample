@@ -79,22 +79,22 @@ p{
 
 #input1 {
 
-    padding: 40px 0px;
+    padding: 25px 0px;
     width: 300px;
     background-color: #4CAF50; 
     color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
     clear: both;
     
 }
 
-.bttn1{
+#bttn1{
 	padding: 10px 0px;
 	width: 100px;
 	background-color: blue; 
