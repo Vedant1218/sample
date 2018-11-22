@@ -100,7 +100,7 @@ function loop2(){
 
 
 
-function yourGuess() {
+function userGuess() {
     var guess = document.getElementById("guess").value;
     var guesses = document.getElementById("output");
     if (guess == numToGuess) {
@@ -114,7 +114,7 @@ function yourGuess() {
     
 
 
-function generateNumberToGuess(confirmIt) {
+function NumberToGuess(confirmIt) {
     var guesses = document.getElementById("output");
    
     if (confirmIt && !confirm('Restart game with new number?')) {
@@ -122,10 +122,9 @@ function generateNumberToGuess(confirmIt) {
     }
     
     guesses.value = '';
-    numToGuess = Math.floor(Math.random()*500);
+    numToGuess = Math.floor(Math.random()*1000);
     guesses.value = "New number generated.\n";
     document.getElementById('numberToGuess').value = '';
-    document.getElementById('cheatShow').style.display = 'none';
 }
 
 function showGuesses(){

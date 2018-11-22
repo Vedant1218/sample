@@ -95,7 +95,16 @@ p{
 }
 
 .bttn1{
-    
+	padding: 10px 0px;
+	width: 100px;
+	background-color: blue; 
+	color: red;
+	text-align: center;
+	display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    clear: both;
 }
 .bttn2{
    
