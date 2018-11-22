@@ -102,44 +102,59 @@ function loop2(){
 
 
 
-function startGame() {
-	
-	//get the name of the player
-  let playerName = document.getElementById('name').value;
-  if (playerName == '') {
-  	alert('Please enter your name');
-  } 
-  else {
-  	//make the guess div visible
-  	var guessDiv = document.getElementById('guess');
-  	guessDiv.style.visibility = 'visible';
-  
-  	var welcomeDiv = document.getElementById('welcome');
-  	welcomeDiv.innerHTML = '<h1>Welcome ' + playerName + '</h1>';
-  }
-  
-  
+function yourGuess() {
+    var guess = document.getElementById("guess").value;
+    var guesses = document.getElementById("output");
+    if (guess == numToGuess) {
+        guesses.value = guesses.value + "\r" + "You have guessed correctly! ("+guess+")";
+    } else if (guess > numToGuess) {
+        guesses.value = guesses.value + "\r" + "You guessing too high!("+guess+")";
+    } else {
+        guesses.value = guesses.value + "\r" + "You guessing too low!("+guess+")";
+    }
+}
+    
+function showNumberToGuess() {
+       if (document.getElementById('cheat').checked) {
+        document.getElementById('numberToGuess').value = numToGuess;
+        document.getElementById('cheatShow').style.display = 'inline';
+    } else {
+        document.getElementById('numberToGuess').value = '';
+        document.getElementById('cheatShow').style.display = 'none';
+    }
 }
 
-var randomNumber = Math.floor(Math.random() * 20) +1;
-var numberGuessed = document.getElementById("userNumber").value;
+function generateNumberToGuess(confirmIt) {
+    var guesses = document.getElementById("output");
+   
+    if (confirmIt && !confirm('Restart game with new number?')) {
+        return;
+    }
+    
+    guesses.value = '';
+    numToGuess = Math.floor(Math.random()*500);
+    guesses.value = "New number generated.\n";
+    document.getElementById('numberToGuess').value = '';
+    document.getElementById('cheatShow').style.display = 'none';
+}
 
-function enterGuess() {
+function showGuesses(){
+    var guesses = document.getElementById('guesses');
+    var btn = document.getElementById('showguesses');
+    
+    if (guesses.style.display != 'block') {
+        guesses.style.display = 'block';
+        btn.value = 'Hide My Guesses';
+    } else {
+        guesses.style.display = 'none';
+        btn.value = 'Show My Guesses';
+    }
+}
 
-	//Get Users Guess
-  let userGuess = document.getElementById("userNumber").value;
-  if(userGuess > randomNumber) {
-  	result.innerHTML ='Your guess is too high, Please try again';
-    document.getElementById("submit").clear();
-  }
-  else if(userGuess < randomNumber) {
-  	result.innerHTML ='Your guess is too low, Please try again';
-    document.getElementById("submit").clear();
-  }
-  else if(userGuess == randomNumber) {
-  	result.innerHTML ='Woohoo You Got It Right!!';
-    document.getElementById("playAgain").style.visibility = "visible";
-  }
+window.onload = function(){
+    generateNumberToGuess();
+}
+
 
 }
 	

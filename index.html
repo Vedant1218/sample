@@ -49,27 +49,26 @@
 			<div>
 	
 			</div>
-				<h2>Welcome to my number guessing game!</h2>
-<p>We have chosen a number between 1 and 1000. Please see if you can guess it.<br> We will give hints while guessing.</p>
-<p>Let's Start!</p>
-<p>What is your name?</p><input type="text" placeholder="Name" name="name" required class="field" id="name">&nbsp;&nbsp;<button onclick="startGame()">
-Begin
-</button>
+				<fieldset>
+ 				<legend>Inputs</legend>
+ 				<label for="guess">Your Guess:</label>
+ 				<input type="text" id="guess" value="523" />
+ 				<input type="button" onclick="yourGuess()" value="submit" /><br />
+				 <input type="button" id="showguesses" onclick="showGuesses()" value="Show My Guesses" />  
+ 				<input type="button" onclick="generateNumberToGuess(true)" value="New Game" /><br />
+				 <input id="cheat" type="checkbox" value="cheat" onclick="showNumberToGuess()" />
+ 				<label for="cheat">Cheat</label>
+ 				<div id="cheatShow" style="display: none;">
+  				<input id="numberToGuess" type="text" />
+  				<label for="numberToGuess">Number to guess</label>
+ 				</div>
+				</fieldset>
+				<fieldset id="guesses" class="guesses">
+				 <legend> Output </legend>
+ 				<textarea id="output" name="output" rows="5" style="width: 100%;"></textarea>
+				</fieldset>
+		
 
-<div id="guess" style="visibility: hidden;">
-<div id="welcome">
-
-</div>
-
-<p>Enter your guess: </p>
-<input type="text" placeholder="Your Guess" name="userNumber" required class="field" id="userNumber" min="1" max="20">
-&nbsp;&nbsp;
-<button id="submit" value="clear" onclick="enterGuess(); return false; ">Submit Your Guess</button>
-<br>
-<br>
-<div id="result"></div>
-<br>
-<button id="playAgain" style="visibility: hidden" onClick="window.location.reload()">Play Again</button>
 
 		</div>
 	
