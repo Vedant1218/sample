@@ -112,15 +112,7 @@ function yourGuess() {
     }
 }
     
-function showNumberToGuess() {
-       if (document.getElementById('cheat').checked) {
-        document.getElementById('numberToGuess').value = numToGuess;
-        document.getElementById('cheatShow').style.display = 'inline';
-    } else {
-        document.getElementById('numberToGuess').value = '';
-        document.getElementById('cheatShow').style.display = 'none';
-    }
-}
+
 
 function generateNumberToGuess(confirmIt) {
     var guesses = document.getElementById("output");
