@@ -48,23 +48,30 @@
 			<button id="input1" class="bttn5" onclick="window.location.href='https://scratch.mit.edu/projects/251862843/'">MYGAME</button>
 			</div>
 			
+			<hr>
+
 			<div>
 			<!-- number guessing game-->
-				<fieldset>
- 				<legend>Guess the number I'm thinking of</legend>
- 				<label for="guess">Your Guess:</label>
- 				<input type="text" id="guess" value=" " />
- 				<input type="button" id ="bttn1" onclick="userGuess()" value="Submit" /><br />
- 				<input type="button" id = "bttn1" onclick="NumberToGuess(true)" value="Generate a number" /><br />
-				</fieldset>
-				<fieldset id="guesses" class="guesses">
-				 <legend> Guesses </legend>
- 				<textarea id="output" name="output" rows="5" style="width: 100%;"></textarea>
-				</fieldset>
-	
+				<h2>Number Guessing Game</h2>
+
+				<label>Your Guess</label>
+				<input id="Guess"type="text" name="yourGuess"
+				placeholder="Guess a number(1-1000)">
+				<button id="NumGuess" onclick ="numGuess()">SUBMIT GUESS</button>
+				<button id="NumGen" onclick="generateNum()">GENERATE NEW NUMBER</button>
+
+			</div>
+			<div>
+				<label>Guesses</label>
+				<p id="guesstext"></p>
+				
+
+
+
 			</div>
 
-
+			<hr>
+			
 			
 
 			<div>
