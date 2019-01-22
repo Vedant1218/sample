@@ -108,21 +108,30 @@ p{
     font-weight: bold;
     cursor: pointer;
 }
-.bttn2{
-   
+#NumGuess{
+  padding: 10px 0px;
+  width: 150px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor:pointer;
 }
 
-.bttn3{
-    
-}
-
-.bttn4{
-    
-}
-
-.bttn5{
-    
-}
+#NumGen{
+  padding: 10px 0px;
+  width: 150px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor:pointer;
 
 
 ul {
