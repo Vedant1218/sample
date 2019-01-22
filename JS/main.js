@@ -100,52 +100,50 @@ function loop2(){
 
 
 
-function userGuess() {
-    var guess = document.getElementById("guess").value;
-    var guesses = document.getElementById("output");
-    if (guess == numToGuess) {
-        guesses.value = guesses.value + "\r" + "You have guessed correctly! ("+guess+")";
-    } else if (guess > numToGuess) {
-        guesses.value = guesses.value + "\r" + "You guessing too high!("+guess+")";
-    } else {
-        guesses.value = guesses.value + "\r" + "You guessing too low!("+guess+")";
-    }
-}
-    
+var guess = document.getElementById("Guess");
+	
 
+	
 
-function NumberToGuess(confirmIt) {
-    var guesses = document.getElementById("output");
-   
-    if (confirmIt && !confirm('Generate new number?')) {
-        return;
-    }
-    
-    guesses.value = '';
-    numToGuess = Math.floor(Math.random()*1000);
-    guesses.value = "New number generated.\n";
-    document.getElementById('numberToGuess').value = '';
-}
+	var guesses = 0;
 
-function showGuesses(){
-    var guesses = document.getElementById('guesses');
-    var btn = document.getElementById('showguesses');
-    
-    if (guesses.style.display != 'block') {
-        guesses.style.display = 'block';
-        btn.value = 'Hide My Guesses';
-    } else {
-        guesses.style.display = 'none';
-        btn.value = 'Show My Guesses';
-    }
-}
-
-window.onload = function(){
-    generateNumberToGuess();
+	var random_Num = Math.floor((Math.random() * 1000) + 1);
+	
 
 
 
-}
+
+function numGuess(){
+
+
+
+var guess_text = document.getElementById("guesstext");
+
+
+
+
+		
+		if (guess == random_Num) {
+			guess_text.innerHTML = ("Congratulations! You got me in " + (guesses) +" guesses")
+			
+		}
+
+
+
+		else if (guess > random_Num){
+			guesses++;
+			guess_text.innerHTML = ("Guess is too high");
+			
+		}
+		else if (guess < random_Num){
+			guesses++;
+			guess_text.innerHTML = ("Guess is too low");
+
+		}
+		
+	}
+
+
 	
 	
 	
