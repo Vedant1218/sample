@@ -164,7 +164,7 @@ function guessNum(){
 	var randomNum = Math.floor((Math.random() * 100) + 1);
 
 
-}
+
 
 
 
@@ -174,38 +174,31 @@ function guessNum(){
 	var chances = 0
 
 
-	while(chances < 10){
-
-			if(guess == randomNum){
-
-				guesstext.innerHTML = "Congradulation! You guessed my number in "+ chances+"guesses";
-				
-			}
-
-			else if(guess > randomNum){
-
-				chances+=1;
-				guesstext.innerHTML = "You have used " + chances +" guesses. Guess lower";
-				
-			}
+	if (guess == random_Num) {
+			guess_text.innerHTML = ("Congratulations! You got me in " + (guesses) +" guesses")
+			
+		}
 
 
 
-			else if(guess < randomNum){
+		else if (guess > random_Num){
+			guesses++;
+			guess_text.innerHTML = ("Guess is too high");
+			
+		}
+		else if (guess < random_Num){
+			guesses++;
+			guess_text.innerHTML = ("Guess is too low");
 
-				chances+=1;		
-				guesstext.innerHTML = "You have used " + chances +" guesses. Guess higher"
-				
-			}
+		}
 			
 			
 
 
-	}
-
-
-
+	
 }
+
+
 
 
 
@@ -236,25 +229,9 @@ var guess_text = document.getElementById("guesstext");
 }	
 
 		
-		if (guess == random_Num) {
-			guess_text.innerHTML = ("Congratulations! You got me in " + (guesses) +" guesses")
-			
-		}
-
-
-
-		else if (guess > random_Num){
-			guesses++;
-			guess_text.innerHTML = ("Guess is too high");
-			
-		}
-		else if (guess < random_Num){
-			guesses++;
-			guess_text.innerHTML = ("Guess is too low");
-
-		}
 		
-	}
+		
+	
 
 
 
