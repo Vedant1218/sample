@@ -151,6 +151,7 @@ p{
   font-weight: bold;
   border-radius: 15px;
   cursor:pointer;
+
 }
 #buttn_encrypt{
  padding: 10px 0px;
@@ -164,6 +165,7 @@ p{
   border-radius: 15px;
   cursor:pointer;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -185,6 +187,7 @@ li a:hover {
     background-color: #555;
     color: white;
     
+
 }
 
 
