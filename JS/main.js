@@ -96,7 +96,75 @@ function loop2(){
 }
 
 
+function _encryption(){
 
+
+
+var encrypted_content= document.getElementById("newcontent"); 	
+
+var _message = document.getElementById("encryption").value;
+
+var _content = String(_message);                                 //turn text in text box into string
+
+var replace1_content = _content.replace(/a/g,"w");               //replace all letter a's with w
+
+var replace2_content = replace1_content.replace(/m/g, "k")       //replace all letter m's with k
+
+var inner_content = replace2_content.split("");                  //breakdown letters into substrings
+
+
+
+var reverse_inner_content = inner_content.reverse("");           //reverse the order of all letter
+
+var connect_content = reverse_inner_content.join("");			 //turn substrings back in strings
+
+
+
+
+encrypted_content.innerHTML = connect_content;					 //display encrypted  text
+
+
+
+
+
+
+}
+
+function _decryption(){
+
+var decrypted_content= document.getElementById("oldcontent");
+
+var _message = document.getElementById("decryption").value;
+
+var _content = String(_message);                                //turn text in text box into string
+
+var replace1_content = _content.replace(/w/g,"a");				 
+
+var replace2_content = replace1_content.replace(/k/g, "m")		//undo the replacement of letter
+
+var inner_content = replace2_content.split("");					//breakdown into substrings
+
+
+
+var reverse_inner_content = inner_content.reverse("");			//put letters back into correct order
+
+var connect_content = reverse_inner_content.join("");			//turn substrings into strings
+
+
+
+
+decrypted_content.innerHTML = connect_content;					//display original text
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
