@@ -100,53 +100,51 @@ function loop2(){
 
 
 
-function userGuess() {
-    var guess = document.getElementById("guess").value;
-    var guesses = document.getElementById("output");
-    if (guess == numToGuess) {
-        guesses.value = guesses.value + "\r" + "You have guessed correctly! ("+guess+")";
-    } else if (guess > numToGuess) {
-        guesses.value = guesses.value + "\r" + "You guessing too high!("+guess+")";
-    } else {
-        guesses.value = guesses.value + "\r" + "You guessing too low!("+guess+")";
-    }
-}
-    
+function guessNum(){
 
+	var guess = document.getElementById("guesses").value;
 
-function NumberToGuess(confirmIt) {
-    var guesses = document.getElementById("output");
-   
-    if (confirmIt && !confirm('Generate new number?')) {
-        return;
-    }
-    
-    guesses.value = '';
-    numToGuess = Math.floor(Math.random()*1000);
-    guesses.value = "New number generated.\n";
-    document.getElementById('numberToGuess').value = '';
-}
+	var randomNum = Math.floor((Math.random() * 100) + 1);
 
-function showGuesses(){
-    var guesses = document.getElementById('guesses');
-    var btn = document.getElementById('showguesses');
-    
-    if (guesses.style.display != 'block') {
-        guesses.style.display = 'block';
-        btn.value = 'Hide My Guesses';
-    } else {
-        guesses.style.display = 'none';
-        btn.value = 'Show My Guesses';
-    }
-}
+	var guesstext = document.getElementById("guess_text");
 
-window.onload = function(){
-    generateNumberToGuess();
+	var chances = 0
+
+	while(chances < 10){
+
+			if(guess == randomNum){
+
+				guesstext.innerHTML = "Congradulation! You guessed my number in "+ chances+"guesses";
+				
+			}
+
+			else if(guess > randomNum){
+
+				chances+=1;
+				guesstext.innerHTML = "You have used " + chances +" guesses. Guess lower";
+				
+			}
 
 
 
-}
-	
+			else if(guess < randomNum){
+
+				chances+=1;		
+				guesstext.innerHTML = "You have used " + chances +" guesses. Guess higher"
+				
+			}
+			
+			
+
+
+	}
+
+
+
+
+
+
+}	
 	
 	
 

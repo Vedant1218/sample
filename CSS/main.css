@@ -100,16 +100,25 @@ p{
 #bttn1{
 	padding: 10px 0px;
 	width: 100px;
-	background-color: blue; 
-	color: red;
+	background-color: orange; 
+	color: white;
 	text-align: center;
 	display: inline-block;
+  border-radius: 10px;
     font-size: 10px;
     font-weight: bold;
     cursor: pointer;
 }
-.bttn2{
-   
+#guesses{
+  width:200px;
+
+
+
+}   
+#guess_text{
+  width:300px;
+
+
 }
 
 .bttn3{

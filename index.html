@@ -49,19 +49,19 @@
 			</div>
 			
 			<div>
+
+			<hr>
 			<!-- number guessing game-->
-				<fieldset>
- 				<legend>Guess the number I'm thinking of</legend>
- 				<label for="guess">Your Guess:</label>
- 				<input type="text" id="guess" value=" " />
- 				<input type="button" id ="bttn1" onclick="userGuess()" value="Submit" /><br />
- 				<input type="button" id = "bttn1" onclick="NumberToGuess(true)" value="Generate a number" /><br />
-				</fieldset>
-				<fieldset id="guesses" class="guesses">
-				 <legend> Guesses </legend>
- 				<textarea id="output" name="output" rows="5" style="width: 100%;"></textarea>
-				</fieldset>
-	
+				
+ 				<h2>Number Guessing Game</h2>
+ 				<input id="guesses"  type="text" name="guess"
+ 				placeholder="Guess a number(1-1000)">
+ 				<button id="bttn1" onclick="guessNum()">Submit Guess</button>
+ 				<button id="bttn1" onclick="">Generate New Number</button>
+ 				<div>
+ 				<textarea id="guess_text" name="Your Guesses"></textarea>
+ 				</div>
+			<hr>
 			</div>
 
 
