@@ -133,7 +133,18 @@ p{
   border-radius: 15px;
   cursor:pointer;
 
-
+#buttn_encrypt{
+ padding: 10px 0px;
+  width: 150px;
+  background-color: black;
+  color: green;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor:pointer;
+}
 ul {
     list-style-type: none;
     margin: 0;
