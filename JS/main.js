@@ -127,15 +127,6 @@ encrypted_content.innerHTML = connect_content;					 //display encrypted  text
 
 
 
-<<<<<<< HEAD
-function guessNum(){
-
-	var guess = document.getElementById("guesses").value;
-
-	var randomNum = Math.floor((Math.random() * 100) + 1);
-=======
-
-}
 
 function _decryption(){
 
@@ -166,15 +157,23 @@ decrypted_content.innerHTML = connect_content;					//display original text
 
 
 
+function guessNum(){
+
+	var guess = document.getElementById("guesses").value;
+
+	var randomNum = Math.floor((Math.random() * 100) + 1);
 
 
->>>>>>> f261c601fbae99c88a22c39b17b9db7cb166bad7
+}
+
+
+
 
 	var guesstext = document.getElementById("guess_text");
 
 	var chances = 0
 
-<<<<<<< HEAD
+
 	while(chances < 10){
 
 			if(guess == randomNum){
@@ -205,7 +204,7 @@ decrypted_content.innerHTML = connect_content;					//display original text
 	}
 
 
-=======
+
 }
 
 
@@ -228,14 +227,14 @@ function numGuess(){
 
 
 var guess_text = document.getElementById("guesstext");
->>>>>>> f261c601fbae99c88a22c39b17b9db7cb166bad7
 
 
 
 
-<<<<<<< HEAD
+
+
 }	
-=======
+
 		
 		if (guess == random_Num) {
 			guess_text.innerHTML = ("Congratulations! You got me in " + (guesses) +" guesses")
@@ -258,8 +257,7 @@ var guess_text = document.getElementById("guesstext");
 	}
 
 
-	
->>>>>>> f261c601fbae99c88a22c39b17b9db7cb166bad7
+
 	
 	
 

@@ -109,7 +109,7 @@ p{
     font-weight: bold;
     cursor: pointer;
 }
-<<<<<<< HEAD
+
 #guesses{
   width:200px;
 
@@ -128,7 +128,7 @@ p{
 
 .bttn4{
     
-=======
+}
 #NumGuess{
   padding: 10px 0px;
   width: 150px;
@@ -140,7 +140,7 @@ p{
   font-weight: bold;
   border-radius: 15px;
   cursor:pointer;
->>>>>>> f261c601fbae99c88a22c39b17b9db7cb166bad7
+
 }
 
 #NumGen{
@@ -154,7 +154,7 @@ p{
   font-weight: bold;
   border-radius: 15px;
   cursor:pointer;
-
+}
 #buttn_encrypt{
  padding: 10px 0px;
   width: 150px;
