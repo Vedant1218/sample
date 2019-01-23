@@ -96,20 +96,85 @@ function loop2(){
 }
 
 
+function _encryption(){
+
+
+
+var encrypted_content= document.getElementById("newcontent"); 	
+
+var _message = document.getElementById("encryption").value;
+
+var _content = String(_message);                                 //turn text in text box into string
+
+var replace1_content = _content.replace(/a/g,"w");               //replace all letter a's with w
+
+var replace2_content = replace1_content.replace(/m/g, "k")       //replace all letter m's with k
+
+var inner_content = replace2_content.split("");                  //breakdown letters into substrings
+
+
+
+var reverse_inner_content = inner_content.reverse("");           //reverse the order of all letter
+
+var connect_content = reverse_inner_content.join("");			 //turn substrings back in strings
 
 
 
 
+encrypted_content.innerHTML = connect_content;					 //display encrypted  text
+
+
+
+
+
+<<<<<<< HEAD
 function guessNum(){
 
 	var guess = document.getElementById("guesses").value;
 
 	var randomNum = Math.floor((Math.random() * 100) + 1);
+=======
+
+}
+
+function _decryption(){
+
+var decrypted_content= document.getElementById("oldcontent");
+
+var _message = document.getElementById("decryption").value;
+
+var _content = String(_message);                                //turn text in text box into string
+
+var replace1_content = _content.replace(/w/g,"a");				 
+
+var replace2_content = replace1_content.replace(/k/g, "m")		//undo the replacement of letter
+
+var inner_content = replace2_content.split("");					//breakdown into substrings
+
+
+
+var reverse_inner_content = inner_content.reverse("");			//put letters back into correct order
+
+var connect_content = reverse_inner_content.join("");			//turn substrings into strings
+
+
+
+
+decrypted_content.innerHTML = connect_content;					//display original text
+
+
+
+
+
+
+
+>>>>>>> f261c601fbae99c88a22c39b17b9db7cb166bad7
 
 	var guesstext = document.getElementById("guess_text");
 
 	var chances = 0
 
+<<<<<<< HEAD
 	while(chances < 10){
 
 			if(guess == randomNum){
@@ -140,11 +205,61 @@ function guessNum(){
 	}
 
 
+=======
+}
+
+
+
+var guess = document.getElementById("Guess");
+	
+
+	
+
+	var guesses = 0;
+
+	var random_Num = Math.floor((Math.random() * 1000) + 1);
+	
 
 
 
 
+function numGuess(){
+
+
+
+var guess_text = document.getElementById("guesstext");
+>>>>>>> f261c601fbae99c88a22c39b17b9db7cb166bad7
+
+
+
+
+<<<<<<< HEAD
 }	
+=======
+		
+		if (guess == random_Num) {
+			guess_text.innerHTML = ("Congratulations! You got me in " + (guesses) +" guesses")
+			
+		}
+
+
+
+		else if (guess > random_Num){
+			guesses++;
+			guess_text.innerHTML = ("Guess is too high");
+			
+		}
+		else if (guess < random_Num){
+			guesses++;
+			guess_text.innerHTML = ("Guess is too low");
+
+		}
+		
+	}
+
+
+	
+>>>>>>> f261c601fbae99c88a22c39b17b9db7cb166bad7
 	
 	
 
