@@ -33,14 +33,12 @@ body {
 #nav{
   width: 200px;
   float: left;
-  clear:both;
 
 }
 
 #main{
 width: 780px;
   float: right;
-  clear:both;
 
 }
 
@@ -75,7 +73,6 @@ p{
   color:#6CA6CD;
   font-size:65;
   font-family: "Times New Roman", Times, serif;
-  clear: both;
 
 }
 
