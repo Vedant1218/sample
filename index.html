@@ -48,7 +48,7 @@
 			</div>
 
 			
-			
+			<div>
 			<!--encryption and decryption-->
 				<h2>Encryption device</h2>
 				<label>Encrypter</label>
@@ -74,21 +74,12 @@
 			<hr>
 			<!-- number guessing game-->
 
-				
- 				<h2>Number Guessing Game</h2>
- 				<input id="guesses"  type="text" name="guess"
- 				placeholder="Guess a number(1-1000)">
- 				<button id="bttn1" onclick="guessNum()">Submit Guess</button>
- 				<button id="bttn1" onclick="">Generate New Number</button>
- 				<div>
- 				<textarea id="guess_text" name="Your Guesses"></textarea>
- 				</div>
 			<hr>
 
 				<h2>Number Guessing Game</h2>
 
 				<label>Your Guess</label>
-				<input id="Guess"type="text" name="yourGuess"
+				<input id="guesses" type="text" name="yourGuess"
 				placeholder="Guess a number(1-1000)">
 				<button id="NumGuess" onclick ="numGuess()">SUBMIT GUESS</button>
 				<button id="NumGen" onclick="generateNum()">GENERATE NEW NUMBER</button>
@@ -97,7 +88,7 @@
 			</div>
 			<div>
 				<label>Guesses</label>
-				<p id="guesstext"></p>
+				<p id="guess_text"></p>
 				
 
 
@@ -109,20 +100,7 @@
 			
 
 
-			<div>
-				<fieldset>
- 				<legend>Guess the number I'm thinking of</legend>
- 				<label for="guess">Your Guess:</label>
- 				<input type="text" id="guess" value=" " />
- 				<input type="button" id ="bttn1" onclick="userGuess()" value="Submit" /><br />
- 				<input type="button" id = "bttn1" onclick="NumberToGuess(true)" value="Generate a number" /><br />
-				</fieldset>
-				<fieldset id="guesses" class="guesses">
-				 <legend> Guesses </legend>
- 				<textarea id="output" name="output" rows="5" style="width: 100%;"></textarea>
-				</fieldset>
-	
-			</div>
+			
 
 			<div>
 				<svg width="400" height="400" fill="red">

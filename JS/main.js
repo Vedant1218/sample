@@ -157,19 +157,20 @@ decrypted_content.innerHTML = connect_content;					//display original text
 }
 
 
-function guessNum(){
+
+
+
+
+var guesstext = document.getElementById("guess_text");
+
+
+var randomNum = Math.floor((Math.random() * 100) + 1);
+
+function numGuess(){
 
 	var guess = document.getElementById("guesses").value;
 
-	var randomNum = Math.floor((Math.random() * 100) + 1);
-
-
-
-
-
-
-
-	var guesstext = document.getElementById("guess_text");
+	
 
 	var chances = 0
 
@@ -215,7 +216,7 @@ var guess = document.getElementById("Guess");
 
 
 
-function numGuess(){
+function generateNum(){
 
 
 
