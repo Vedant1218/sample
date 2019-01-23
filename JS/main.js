@@ -124,7 +124,7 @@ var connect_content = reverse_inner_content.join("");			 //turn substrings back 
 encrypted_content.innerHTML = connect_content;					 //display encrypted  text
 
 
-
+}
 
 
 
@@ -154,7 +154,7 @@ var connect_content = reverse_inner_content.join("");			//turn substrings into s
 decrypted_content.innerHTML = connect_content;					//display original text
 
 
-
+}
 
 
 function guessNum(){
